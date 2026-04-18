@@ -1,59 +1,92 @@
-# AngularModulesApiTailwind
+# Angular Modules API Tailwind
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+## Sobre o projeto
 
-## Development server
+Este projeto foi criado com **Angular 19** e tem como objetivo principal servir como **projeto de estudo**.
 
-To start a local development server, run:
+Ele foi usado para praticar conceitos como:
 
-```bash
-ng serve
-```
+- organização por módulos no Angular
+- roteamento entre páginas
+- formulários reativos
+- consumo de API mockada com `json-server`
+- estilização com `Tailwind CSS`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+O foco aqui é aprendizado, experimentação e evolução da estrutura da aplicação, e não uma solução final de produção.
 
-## Code scaffolding
+## Tecnologias utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Angular 19
+- TypeScript
+- Tailwind CSS
+- JSON Server
+- SCSS
 
-```bash
-ng generate component component-name
-```
+## Como executar o projeto
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Instale as dependências:
 
 ```bash
-ng build
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Inicie o projeto Angular:
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+A aplicação ficará disponível em:
 
 ```bash
-ng e2e
+http://localhost:4200/
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Como executar a API mock
 
-## Additional Resources
+Este projeto utiliza um arquivo local em `api/db.json` para simular uma API.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para subir o servidor mock, execute:
+
+```bash
+npm run server
+```
+
+Por padrão, a API ficará disponível em:
+
+```bash
+http://localhost:3000/
+```
+
+## Scripts disponíveis
+
+Executar a aplicação em modo de desenvolvimento:
+
+```bash
+npm start
+```
+
+Gerar build do projeto:
+
+```bash
+npm run build
+```
+
+Executar os testes unitários:
+
+```bash
+npm test
+```
+
+## Estrutura de estudo
+
+Atualmente, o projeto está organizado para praticar:
+
+- módulo de categorias
+- módulo de lugares
+- layout compartilhado
+- integração entre formulário e serviços
+
+## Observação
+
+Este repositório é voltado a estudo e pode receber ajustes frequentes de estrutura, layout e organização conforme a evolução do aprendizado com Angular.
