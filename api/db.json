@@ -6,33 +6,25 @@
       "descricao": "Lugares alimentação"
     },
     {
-      "nome": "Shoppings Atualizado",
-      "descricao": "Lugares para fazer compras e passear",
-      "id": "vvSVDE2u2lg"
-    },
-    {
       "id": "TNLL89EgxKU",
       "nome": "Shoppings",
       "descricao": "Lugares para fazer compras e passear"
     },
     {
-      "nome": null,
-      "descricao": null,
-      "id": "4t-OuFASJxQ"
-    },
-    {
       "nome": "Praia",
       "descricao": "Lugar para se divertir com a familia",
       "id": "XVTaxgHzxZI"
-    },
-    {
-      "nome": "teste",
-      "descricao": "teste",
-      "id": "JiLAYdkzE_w"
     }
   ],
   "lugares": [
-
+    {
+      "nome": "Porto de galinhas",
+      "categoria": "Praia",
+      "localizacao": "Pernambuco",
+      "urlFoto": "https://www.dicasportodegalinhas.com.br/wp-content/uploads/2023/07/PiscNat-AHPG_vlubambo-7563-1536x1125.jpg",
+      "avaliacao": "3",
+      "id": "yf3WGaF7vyk"
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

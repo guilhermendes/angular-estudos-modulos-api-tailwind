@@ -9,6 +9,8 @@
         class="w-full p-3 border borer-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400" required>
     </div>
 
+    <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('nome')">Campo Obrigátorio</span>
+
     <div class="mb-4">
       <label for="localizacao" class="block text-gray-600 font-medium mb-2">Categoria</label>
 
@@ -18,12 +20,15 @@
         <option [value]="">Selecione uma categoria</option>
         <option *ngFor="let cat of categorias" [value]="cat.nome"> {{cat.nome}}</option>
       </select>
+
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('categoria')">Campo Obrigátorio</span>
     </div>
 
     <div class="mb-4">
       <label for="localizacao" class="block text-gray-600 font-medium mb-2">Localização</label>
       <input type="text" id="localizacao" name="localizacao" formControlName="localizacao" placeholder="São Paulo"
         class="w-full p-3 border borer-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400" required>
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('localizacao')">Campo Obrigátorio</span>
     </div>
 
     <div class="mb-4">
@@ -31,6 +36,7 @@
       <input type="text" id="urlFoto" name="urlFoto" formControlName="urlFoto"
         placeholder="Ex: http://exemlo.com/foto.jpg"
         class="w-full p-3 border borer-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400" required>
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('urlFoto')">Campo Obrigátorio</span>
     </div>
 
     <div class="mb-4">
@@ -46,6 +52,8 @@
         <option [value]="4">4 - Muito bom</option>
         <option [value]="5">5 - Excelente</option>
       </select>
+
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('avaliacao')">Campo Obrigátorio</span>
     </div>
 
     <button type=" submit" class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700">
