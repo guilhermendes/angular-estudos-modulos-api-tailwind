@@ -24,6 +24,22 @@
       "urlFoto": "https://www.dicasportodegalinhas.com.br/wp-content/uploads/2023/07/PiscNat-AHPG_vlubambo-7563-1536x1125.jpg",
       "avaliacao": "3",
       "id": "yf3WGaF7vyk"
+    },
+    {
+      "nome": "Fogo de Chão",
+      "categoria": "Restaurantes",
+      "localizacao": "Rio de Janeiro",
+      "urlFoto": "https://cdn0.casamentos.com.br/vendor/6953/3_2/640/jpg/casamento-fogo-de-cho-1_13_156953.webp",
+      "avaliacao": "3",
+      "id": "OXCCZ36UrhA"
+    },
+    {
+      "nome": "Shopping Cidade São Paulo",
+      "categoria": "Shoppings",
+      "localizacao": "São Paulo",
+      "urlFoto": "https://www.hubiah.com.br/custom/domain_1/image_files/sitemgr_photo_573.jpg",
+      "avaliacao": "4",
+      "id": "lK30chfa2lE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
