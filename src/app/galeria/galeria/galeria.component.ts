@@ -13,6 +13,8 @@ import { LugarService } from '../../lugares/lugar.service';
 export class GaleriaComponent implements OnInit {
   lugares: Lugar[] = [];
   categoriasFiltro: Categoria[] = [];
+  nomeFiltro: string = '';
+  categoriaFiltro: string = '';
 
   constructor(
     private lugaresService: LugarService,
@@ -27,5 +29,18 @@ export class GaleriaComponent implements OnInit {
     this.lugaresService
       .listar()
       .subscribe((lugaresResposta) => (this.lugares = lugaresResposta));
+  }
+
+  getTotalEstrelas(lugar: Lugar): string {
+    return (
+      '&#9733;'.repeat(lugar.avaliacao ?? 0) +
+      '&#9734'.repeat(5 - (lugar.avaliacao || 0))
+    );
+  }
+
+  filtrar() {
+    this.lugaresService
+      .filtrar(this.nomeFiltro, this.categoriaFiltro)
+      .subscribe((resultado) => (this.lugares = resultado));
   }
 }
