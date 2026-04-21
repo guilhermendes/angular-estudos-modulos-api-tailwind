@@ -17,20 +17,19 @@ export class LugarService {
     return this.http.get<Lugar[]>('http://localhost:3000/lugares');
   }
 
-  filtrar(nome: string, categoria: string): Observable<Lugar[]{
-
+  filtrar(nome: string, categoria: string): Observable<Lugar[]> {
     let params = new HttpParams();
 
-    if(nome){
-      params = params.set('nome_like', nome)
+    if (nome) {
+      params = params.set('nome_like', nome);
     }
 
-    if(categoria){
-      params = params.set('categoria', categoria)
+    if (categoria && categoria !== '0') {
+      params = params.set('categoria', categoria);
     }
 
-    return this.http.get<Lugar[]>('http://localhost:3000/lugares',{
-    params: params
+    return this.http.get<Lugar[]>('http://localhost:3000/lugares', {
+      params: params,
     });
   }
 }
