@@ -1,0 +1,29 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Restaurantes",
+      "descricao": "Lugares alimentação"
+    },
+    {
+      "id": "TNLL89EgxKU",
+      "nome": "Shoppings",
+      "descricao": "Lugares para fazer compras e passear"
+    },
+    {
+      "id": "XVTaxgHzxZI",
+      "nome": "Praia",
+      "descricao": "Lugar para se divertir com a familia"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "yf3WGaF7vyk",
+      "nome": "Porto d galinhas",
+      "categoria": "Praia",
+      "localizacao": "Pernambuco",
+      "urlFoto": "https://www.dicasportodegalinhas.com.br/wp-content/uploads/2023/07/PiscNat-AHPG_vlubambo-7563-1536x1125.jpg",
+      "avaliacao": "3"
+    }
+  ]
+}
